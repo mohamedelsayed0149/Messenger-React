@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fafafa;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #2778d4, #7336e6);
+}
+.navbar__container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  color: #fff;
+}
+.navbar__logo {
+  margin: 0 10px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  flex: 1;
+}
+.navbar__links {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar__links li {
+  list-style-type: none;
+}
+.navbar__btn {
+  text-decoration: none;
+  height: 35px;
+  border: none;
+  background: #d40264;
+  color: #fff;
+  padding: 0 10px;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.4);
+  outline: none;
+  cursor: pointer;
+}
+.navbar__img {
+  width: 35px;
+  height: 35px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.navbar__img img {
+  width: 100%;
+  height: 100%;
+}
+.messages {
+  width: 1200px;
+  max-width: 1200px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: calc(100vh - 120px);
+  margin: 60px auto;
+  padding: 20px;
+}
+.input__form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.input__control {
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #efefef;
+  outline: none;
+  padding: 0 15px;
+}
+.messages__other {
+  display: flex;
+}
+.messages__other-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.messages__other-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.messages__other-msg {
+  width: 400px;
+  padding-left: 10px;
+  margin-top: 7px;
+}
+.messages__other-msg p {
+  display: inline-block;
+  background: #efefef;
+  padding: 10px;
+  font-size: 14px;
+  margin-top: 7px;
+  border-radius: 4px;
+}
+.messages__other-msg span {
+  display: block;
+  text-transform: capitalize;
+}
+.messages__my {
+  display: flex;
+  justify-content: flex-end;
+}
+.messages__my-p {
+  width: 400px;
+  text-align: right;
+  margin-top: 7px;
+}
+.messages__my-p p {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  background: linear-gradient(to right, #1e53b6, #7336e6);
+  color: #fff;
+  border-radius: 4px;
+}
+.welcome {
+  background: #fff;
+  width: 1200px;
+  margin: 90px auto;
+  padding: 20px;
+}
+.welcome h1 {
+  margin-bottom: 15px;
+  color: blue;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 765px) {
+  .navbar__container {
+    width: 500px;
+    max-width: 500px;
+    padding: 0 20px;
+  }
+  .messages {
+    width: 90%;
+  }
+  .welcome{
+    width: 200px;
+    margin: 50px auto;
+    padding: 0 5px;
+  }
+}
